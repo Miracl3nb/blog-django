@@ -1,8 +1,8 @@
 from django.db import models
-from django.forms import CharField
 import datetime
 # Create your models here.
-
+#from django.forms import CharField
+#from django.utils import timezone
 
 class Post (models.Model):
     title = models.CharField(max_length=100)

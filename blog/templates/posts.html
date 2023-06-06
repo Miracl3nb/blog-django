@@ -1,15 +1,37 @@
-{% extends "layout.html" %}
-
+{% extends "layout.html" %} 
 
 {% block content %}
-<h1>POST</h1 {% for post in posts %} <h2>{{post.title}} </h2>
-<h3> {{post.date}} </h3>
-<p>{{post.description|striptags|truncatechars:150}} </p>
-<p>{{post.date|date:'M D Y'}} </p>
-<img src="{{post.image.url}}" alt="{{post.title}}">
 
-<a href="{% url 'blog:post_detail' post.id  %}">{{post.title}} </a>
+<div class="container">
+    <div class="text-center my-5">
+        <h1>POST</h1>
+        <hr />
+    </div>
+</div>
 
-{% endfor %}
+<div class="row">
+    {% for post in posts %}
 
-{% endblock content %}
+    <!-- columas de posteos  -->
+
+    <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card mb-5 shadow-sm">
+            <img class="img-fluid" src="{{post.image.url}}" alt="{{post.title}}" />
+
+            <div class="card-body">
+            <p>{{post.date|date:'M d Y'}}</p>
+                <div class="card-title">
+                    <h2>{{post.title}}</h2>
+                </div>
+                <div class="card-text">
+                    <p>{{post.description|striptags|truncatechars:150}}</p>
+                    <a class="btn btn-p" href="{% url 'blog:post_detail' post.id  %}">Leer mas</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  <h3>{{post.date}}</h3> -->
+
+    {% endfor %} {% endblock content %}
+</div>

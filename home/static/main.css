@@ -1,11 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
 .body{
-    background-color: blueviolet;
-    
+    color:#283618 ;
+    background-color: #fefae0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+.btn-p{
+    border-color: #283618 !important ; 
 }
 
-img{
-    height: 200px;
+.btn-p:hover {
+    background-color: #283618 !important ;
+    color: #fefae0 !important ;
+} 
+.nav-p{
+    background-color:#283618 !important ;
+    color: #fefae0 ;
 }
+
+.card img{        
+    height: 280px;
+    }
+
+img{
+    height: 400px
+}
+
 .imgperfil{
     border-radius: 500px;
     height: 400px;

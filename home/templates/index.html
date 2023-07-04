@@ -1,9 +1,43 @@
 {% extends "layout.html" %}
 {%load static%}
 {% block content %}
+<div class="titulos">
+    <div>
+        <h2>Nahuel Brunel</h2>
+    </div>
+</div>
+<div class="subtitulo">
+    <h3>Python backend developer</h3>
+</div>
 
-<h1>HOME</h1>
+<div class="contenedor">
+    <img class="imgperfil" src="{%static 'imgprofile.jpg'%}" alt="nbrunel">
+    <p>Soy Nahuel, un programador backend especializado en Python con más de 7 años de experiencia en
+        infraestructura y
+        redes. Mi enfoque se centra en la resolución de problemas y tengo una sólida capacidad para encontrar
+        soluciones
+        eficientes. Además, cuento con habilidades en seguridad IT, lo que me permite garantizar la integridad de
+        los
+        sistemas que desarrollo <br>
+        Estoy listo para enfrentar nuevos desafíos y utilizar mi experiencia en infraestructura, redes y seguridad
+        IT
+        para
+        contribuir al crecimiento de su empresa. <br>
+        <strong>No dudes en contactarme, o visitar mi blog</strong>
+    </p>
+</div>
 
-<img class="imgperfil"  src="{%static 'imgprofile.jpg'%}" alt="nbrunel">
-
+<div class="tecnologias">
+    <h4>Tecnologias</h4>
+    <ul>
+        <li><img src="{%static 'python.png'%}" alt=""></li>
+        <li><img src="{%static 'django.png'%}" alt=""></li>
+        <li><img src="{%static 'fastapi.png'%}" alt=""></li>
+        <li><img src="{%static 'js.png'%}" alt=""></li>
+        <li><img src="{%static 'reacjs.png'%}" alt=""></li>
+        <li><img src="{%static 'database.png'%}" alt=""></li>
+        <li><img src="{%static 'docker.png'%}" alt=""></li>
+        <li><img src="{%static 'git2.png'%}" alt=""></li>
+    </ul>
+</div>
 {% endblock content %}
